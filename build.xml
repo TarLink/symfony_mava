@@ -124,7 +124,7 @@
     <exec executable="phpunit" failonerror="true">
       <arg value="-c" />
       <arg path="${basedir}/phpunit.xml" />
-      <arg value="\\\-\-bootstrap"/>
+      <arg value="\\-\-bootstrap"/>
       <arg path="${basedir}/vendor/autoload.php" />
     </exec>
   -->
