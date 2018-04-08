@@ -3,5 +3,5 @@ default:
     Behat\Symfony2Extension: ~
     Behat\MinkExtension:
       goutte: ~
-      selenim2: ~
+      selenium2: ~
       base_url: http://localhost:8000/app_dev.php
