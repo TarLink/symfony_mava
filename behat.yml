@@ -1,4 +1,6 @@
 default:
+  paths:
+    features: vendor/behat/
   extensions:
     Behat\Symfony2Extension: ~
     Behat\MinkExtension:
