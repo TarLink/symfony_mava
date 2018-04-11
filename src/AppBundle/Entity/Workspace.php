@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * User
+ * Workspace
  *
- * @ORM\Table(name="user")
+ * @ORM\Table(name="workspace")
  * @ORM\Entity
  */
-class User
+class Workspace
 {
     /**
      * @var integer
@@ -24,23 +24,16 @@ class User
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, nullable=false)
+     * @ORM\Column(name="name", type="string", length=45, nullable=false)
      */
     private $name;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="bio", type="text", nullable=false)
+     * @ORM\Column(name="description", type="text", length=255, nullable=false)
      */
-    private $bio;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="email", type="string", length=255, nullable=false)
-     */
-    private $email;
+    private $description;
 
 
 
@@ -59,7 +52,7 @@ class User
      *
      * @param string $name
      *
-     * @return User
+     * @return Workspace
      */
     public function setName($name)
     {
@@ -79,50 +72,26 @@ class User
     }
 
     /**
-     * Set bio
+     * Set description
      *
-     * @param string $bio
+     * @param string $description
      *
-     * @return User
+     * @return Workspace
      */
-    public function setBio($bio)
+    public function setDescription($description)
     {
-        $this->bio = $bio;
+        $this->description = $description;
 
         return $this;
     }
 
     /**
-     * Get bio
+     * Get description
      *
      * @return string
      */
-    public function getBio()
+    public function getDescription()
     {
-        return $this->bio;
-    }
-
-    /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return User
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->email;
+        return $this->description;
     }
 }
