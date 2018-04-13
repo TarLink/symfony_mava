@@ -8,3 +8,12 @@ actor_suffix: Tester
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
+modules:
+  config:
+    Db:
+      dsn: 'mysql:host=db; dbname=mava_test'
+      user: 'root'
+      password: 'symfonn'
+      dump: tests/_data/dump.sql
+      populate: true #dump will be loaded before the test
+      cleanup: false # dump will be loaded after each test

@@ -10,6 +10,6 @@ modules:
     enabled:
         # add a framework module here
         - Symfony2:
-          app_path: 'app'
-          var_path: 'var'
-          environment: 'test'
+            app_path: 'app'
+            var_path: 'var'
+            environment: 'test'

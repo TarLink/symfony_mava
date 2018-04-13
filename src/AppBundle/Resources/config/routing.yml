@@ -1,0 +1,3 @@
+app_about_more:
+  path: /about/{name}/details
+  defaults: { _controller: AppBundle:About:details}
