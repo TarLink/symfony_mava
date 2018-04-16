@@ -32,7 +32,7 @@
     <delete dir="${builddir}/docs/*"/>
   </target>
 
-  <target name="prepare" depends="clean" description="Pprepare for build">
+  <target name="prepare" depends="clean" description="Prepare for build">
     <mkdir dir="${builddir}/api"/>
     <mkdir dir="${builddir}/code-browser"/>
     <mkdir dir="${builddir}/coverage"/>
