@@ -10,7 +10,7 @@
 
   <target name="build-parallel" depends="prepare,lint,tools-parallel,codeception,phpcb"/>
 
-  <target name="tools-parallel" description="Run tools in parallel">
+  <target name="tools-parallel" description="Runs tools in parallel">
     <parallel threadCount="2">
       <sequential>
         <antcall target="pdepend"/>
