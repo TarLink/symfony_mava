@@ -6,11 +6,11 @@
   <property name="builddir" value="${workspace}/app/build" />
 
   <target name="build"
-  depends="prepare,parameters,lint,phploc,pdepend,phpcpd,phpmd-ci,phpcs-ci,phpdoc,codeception,phpcb"/>
+  depends="prepare,lint,phploc,pdepend,phpcpd,phpmd-ci,phpcs-ci,phpdoc,codeception,phpcb"/>
 
   <target name="build-parallel" depends="prepare,lint,tools-parallel,codeception,phpcb"/>
 
-  <target name="tools-parallel" description="Runs tools in parallel">
+  <target name="tools-parallel" description="Run tools in parallel">
     <parallel threadCount="2">
       <sequential>
         <antcall target="pdepend"/>
