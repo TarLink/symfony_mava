@@ -119,12 +119,9 @@
     </exec>
   </target>
 
-  <target name="phpunit" description="Run unit tests with PHPUnit">
-    <exec executable="phpunit" failonerror="true">
-      <arg value="-c" />
-      <arg path="${basedir}/phpunit.xml" />
-      <arg value="--bootstrap"/>
-      <arg path="${basedir}/vendor/autoload.php" />
+  <target name="codeception" description="Run unit tests with codeception">
+    <exec executable="codecept" failonerror="true">
+      <arg value="run" />
     </exec>
   </target>
 
