@@ -11,7 +11,7 @@ extensions:
 modules:
   config:
     Db:
-      dsn: 'mysql:host=ip-172-31-33-126; dbname=mava_test'
+      dsn: 'mysql:host=ip-172-31-33-126;dbname=mava_test'
       user: 'root'
       password: 'latra@mar0car'
       dump: tests/_data/dump.sql
