@@ -18,7 +18,7 @@ class WorkspaceControllerAcceptCest
 
     public function testShowAction(AcceptanceTester $I)
     {
-      $I->wantTo('too see inside the "writing" workspace');
+      $I->wantTo('too see inside the "writingg" workspace');
       $I->amOnPage('/workspace/writing');
       $I->see('Symfony book');
     }
