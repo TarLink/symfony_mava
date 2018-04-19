@@ -11,9 +11,9 @@ extensions:
 modules:
   config:
     Db:
-      dsn: 'mysql:host=localhost;dbname=mava_test'
+      dsn: 'mysql:host=db;dbname=mava_test'
       user: 'root'
-      password: 'latra@mar0car'
+      password: 'symfonn'
       dump: tests/_data/dump.sql
       populate: true #dump will be loaded before the test
       cleanup: false # dump will be loaded after each test
