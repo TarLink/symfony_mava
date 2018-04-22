@@ -4,10 +4,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+*@Route("/dashboard/workspace")
+*/
 class WorkspaceController extends Controller
 {
   /**
-  * @Route("/workspace/{name}", name="workspace_show")
+  * @Route("/{name}", name="workspace_show")
   * @param $name
   * @return Response
   */

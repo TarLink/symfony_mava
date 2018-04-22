@@ -39,3 +39,11 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+hautelook_alice:
+    db_drivers:
+        orm: ~ #Enable Doctrine ORM if is registered
+    locale: en_US #locale to use for Faker
+    seed: 1 #A seed to make sure faker generate data consistently
+    persist_once: false #Only persist objects once
+    loading_limit: 5 # Max times the loader try to load the files
