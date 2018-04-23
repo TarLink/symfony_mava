@@ -1,3 +1,7 @@
+app_workspace:
+    resource: "@AppBundle/Resources/config/routing/workspace.yml"
+    prefix:   /workspace
+
 app_about_more:
   path: /about/{name}/details
   defaults: { _controller: AppBundle:About:details}
