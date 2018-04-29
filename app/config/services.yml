@@ -49,7 +49,6 @@ services:
       public: true
 
     mava_user.profile.form.type:
-      class:
-        AppBundle\Form\ProfileType
+      class: AppBundle\Form\ProfileType
       tags:
         - { name: form.type, alias: mava_user_profile }
