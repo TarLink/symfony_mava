@@ -84,6 +84,11 @@ fos_user:
       group_manager: sonata.user.orm.group_manager
     service:
       user_manager: sonata.user.orm.user_manager
+    profile:  # Authentication Form
+        form:
+            type:               mava_user_profile
+            name:               fos_user_profile_form
+            validation_groups:  [Authentication] # Please note : this is not the default value
 
 sonata_block:
   default_contexts: [cms]
@@ -100,3 +105,7 @@ sonata_user:
   class:
     user: Application\Sonata\UserBundle\Entity\User
     group: Application\Sonata\UserBundle\Entity\Group
+
+mopa_bootstrap:
+  form: ~ # Adds twig form theme support
+  menu: ~ #enables twig helpers for menu
