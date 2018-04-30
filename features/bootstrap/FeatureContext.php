@@ -23,11 +23,23 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
     {
     }
 
+
     /**
-     * @When I press more
+     * @Given I log in as Jack
      */
-    public function iPressMore()
+    public function iLogInAsJack()
     {
-        throw new PendingException();
+        $this->visit('/login');
+        $this->fillField('username', 'Jack');
+        $this->fillField('password', 'jackpass');
+        $this->pressButton('_submit');
+    }
+
+    /**
+     * @Given I visit :arg1
+     */
+    public function iVisit($arg1)
+    {
+        $this->visit($arg1);
     }
 }

@@ -4,4 +4,4 @@ default:
     Behat\MinkExtension:
       goutte: ~
       selenium2: ~
-      base_url: http://symfony/
+      base_url: http://symfony/app_dev.php

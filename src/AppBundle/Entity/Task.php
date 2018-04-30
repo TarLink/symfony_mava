@@ -50,6 +50,13 @@ class Task
     private $attachment = 'NULL';
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", nullable=false)
+     */
+    private $status;
+
+    /**
      * @var \AppBundle\Entity\Project
      *
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Project")

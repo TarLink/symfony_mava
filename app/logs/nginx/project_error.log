@@ -1,0 +1,6 @@
+2018/03/22 15:38:31 [crit] 6#6: *1 realpath() "/var/www/mava/web" failed (2: No such file or directory), client: 172.26.0.1, server: symfony, request: "GET / HTTP/1.1", host: "symfony:8085"
+2018/03/22 15:38:31 [error] 6#6: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: symfony, request: "GET / HTTP/1.1", upstream: "fastcgi://172.26.0.2:9000", host: "symfony:8085"
+2018/03/22 15:39:13 [crit] 6#6: *1 realpath() "/var/www/mava/web" failed (2: No such file or directory), client: 172.26.0.1, server: symfony, request: "GET / HTTP/1.1", host: "symfony:8085"
+2018/03/22 15:39:13 [error] 6#6: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: symfony, request: "GET / HTTP/1.1", upstream: "fastcgi://172.26.0.2:9000", host: "symfony:8085"
+2018/03/22 15:39:14 [crit] 6#6: *1 realpath() "/var/www/mava/web" failed (2: No such file or directory), client: 172.26.0.1, server: symfony, request: "GET / HTTP/1.1", host: "symfony:8085"
+2018/03/22 15:39:14 [error] 6#6: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: symfony, request: "GET / HTTP/1.1", upstream: "fastcgi://172.26.0.2:9000", host: "symfony:8085"
