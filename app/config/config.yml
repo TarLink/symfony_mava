@@ -28,11 +28,13 @@ framework:
         save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: ~
     http_method_override: true
-    assets: ~
     php_errors:
         log: true
     templating:
         engines: ['twig']
+    assets:
+        # feature is supported in Symfony 3.3 and higher
+        json_manifest_path: '%kernel.project_dir%/web/build/manifest.json'
 
 # Twig Configuration
 twig:
@@ -105,6 +107,10 @@ sonata_user:
   class:
     user: Application\Sonata\UserBundle\Entity\User
     group: Application\Sonata\UserBundle\Entity\Group
+
+sonata_admin:
+  title: MAVA 1.1
+  title_logo: 'build/images/logo.jpg'
 
 mopa_bootstrap:
   form: ~ # Adds twig form theme support

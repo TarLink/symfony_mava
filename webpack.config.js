@@ -11,6 +11,8 @@ Encore
     // will create web/build/mava.js and web/build/mava.css
     .addEntry('mava', './assets/js/mava.js')
 
+    .addEntry('logo', './assets/images/logo.jpg')
+
     // allow legacy applications to use $/jQuery as a global variable
     .autoProvidejQuery()
 
@@ -28,6 +30,8 @@ Encore
 
     // allow sass/scss files to be processed
      .enableSassLoader()
+
+     .enableVersioning()
 ;
 
 // export the final configuration

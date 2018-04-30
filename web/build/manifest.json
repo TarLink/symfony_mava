@@ -1,9 +1,11 @@
 {
-  "build/mava.js": "/build/mava.js",
-  "build/mava.css": "/build/mava.css",
+  "build/mava.js": "/build/mava.bbc11968.js",
+  "build/mava.css": "/build/mava.c71be019.css",
+  "build/logo.js": "/build/logo.d68c9052.js",
   "build/fonts/glyphicons-halflings-regular.eot": "/build/fonts/glyphicons-halflings-regular.f4769f9b.eot",
   "build/images/glyphicons-halflings-regular.svg": "/build/images/glyphicons-halflings-regular.89889688.svg",
   "build/fonts/glyphicons-halflings-regular.ttf": "/build/fonts/glyphicons-halflings-regular.e18bbf61.ttf",
   "build/fonts/glyphicons-halflings-regular.woff": "/build/fonts/glyphicons-halflings-regular.fa277232.woff",
-  "build/fonts/glyphicons-halflings-regular.woff2": "/build/fonts/glyphicons-halflings-regular.448c34a5.woff2"
+  "build/fonts/glyphicons-halflings-regular.woff2": "/build/fonts/glyphicons-halflings-regular.448c34a5.woff2",
+  "build/images/logo.jpg": "/build/images/logo.5ed2ad2a.jpg"
 }
